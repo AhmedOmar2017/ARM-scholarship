@@ -43,8 +43,10 @@
  void IntCtrl_Init (void)
  {
      /*  TODO: configure crouping/subgrouping system in APINT register in SCB*/
-     /*  TODO: enable/disable base on user configration in NVIC_ENx and SCB_Sys registers*/
+     APINT = 0xFA050 | 0x0000;
      /*  TODO: Assign group/subgroup periorty in NVIC_PRIx Nvic and SCB_SYSPRIx Register*/
+     /*  TODO: enable/disable base on user configration in NVIC_ENx and SCB_Sys registers*/
+    
  }
 
  /*****************************************************************
